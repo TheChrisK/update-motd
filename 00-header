@@ -1,0 +1,23 @@
+# HEADER FOR MOTD
+# THIS CONFIG COMES WITH NO WARRANTY. USER ASSUMES ALL RISKS
+# TAILORED FOR DEBIAN BASED LINUX RELEASES
+
+[ -r /etc/lsb-release ] && . /etc/lsb-release
+ 
+if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
+        # Fall back to using the very slow lsb_release utility
+        DISTRIB_DESCRIPTION=$(lsb_release -s -d)
+fi
+
+docker=`docker ps --format '{{.Names}}'`
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+figlet $(hostname) #MAKE SURE FIGLET IS INSTALLED (apt install figlet). MORE STYLES AVAILABLE (http://www.figlet.org/)
+echo "Docker containers:"
+printf "${RED}$docker${NC}\n"
+
+printf "\n"
+ 
+printf "Welcome to %s (%s).\n" "$DISTRIB_DESCRIPTION" "$(uname -r)"
+printf "\n"
