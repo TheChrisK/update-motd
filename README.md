@@ -1,4 +1,4 @@
-### Update MOTD
+# Update MOTD
 
 ##### Install prerequisites and set up files
 
@@ -14,7 +14,7 @@
 
 `cd  /etc/update-motd.d`
 
-##### Populate the files
+## Populate the files
 
 **Header (00-header)**
 
@@ -44,7 +44,7 @@ printf "Welcome to %s (%s).\n" "$DISTRIB_DESCRIPTION" "$(uname -r)"
 printf "\n"
 ```
 
-** System Information (10-sysinfo) **
+**System Information (10-sysinfo)**
 
 ```
 # SYSTEM INFORMATION FOR MOTD
@@ -85,19 +85,19 @@ echo
 echo
 ```
 
-** Footer (90-footer) ** *optional*
+**Footer (90-footer)** *optional*
 
-##### Plex streaming information
+# Plex streaming information
 
 Create the following support files in /etc/update-motd/
 
-** requirements.txt **
+**requirements.txt**
 
 ```
 python-dotenv~=0.19.2
 ```
 
-** .env **
+**.env**
 
 ```
 # if your configuration for server/port is different than the defaults, edit them accordingly
@@ -107,7 +107,7 @@ plex_port=32400
 plex_token=ADDYOURPLEXTOKENHERE
 ```
 
-** Plex (95-plex) **
+*Plex (95-plex)**
 
 ```
 # PLEX STREAMING INFORMATION
