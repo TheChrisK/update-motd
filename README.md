@@ -104,7 +104,7 @@ python-dotenv~=0.19.2
 plex_server=localhost
 plex_port=32400
 # Replace 'YOUR_TOKEN_HERE' with your X-Plex-Token string obtained from your server.
-plex_token=ADDYOURPLEXTOKENHERE
+plex_token=YOUR_TOKEN_HERE
 ```
 
 *Plex (95-plex)**
