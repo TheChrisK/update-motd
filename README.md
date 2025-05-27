@@ -1,5 +1,10 @@
 # Update MOTD
 
+### Make your Linux MOTD simple and informative
+
+<img src="https://i.imgur.com/GvE1j0a.png">
+
+
 ### Install prerequisites and set up files
 
 `apt install lsb-release figlet jq update-motd -y`
