@@ -8,7 +8,7 @@
 
 `mkdir /etc/update-motd.d/`
 
-`touch /etc/update-motd.d/00-header ; touch /etc/update-motd.d/10-sysinfo ; touch /etc/update-motd.d/90-footer`
+`touch /etc/update-motd.d/00-header ; touch /etc/update-motd.d/10-sysinfo ; touch /etc/update-motd.d/90-footer ; touch /etc/update-motd.d/95-plex`
 
 `chmod +x /etc/update-motd.d/*`
 
