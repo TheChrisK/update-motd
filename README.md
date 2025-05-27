@@ -1,6 +1,6 @@
 # Update MOTD
 
-##### Install prerequisites and set up files
+### Install prerequisites and set up files
 
 `apt install lsb-release figlet jq update-motd -y`
 
